@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700');
+
+::selection {
+    background: #149b38; /* Background color */
+    color: #ecf3ee; /* Text color */ 
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    color: #ecf3ee;
+    background-color: #08130b;
+    background-image: repeating-linear-gradient(rgb(8, 19, 11) 40%, rgba(20, 155, 56, .1) 41%);
+}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+header{
+    padding: 100px 0px 40px 0px;
+}
+
+header h1{
+    font-size: calc(2vmax + 0.8em);
+    font-weight: bold;
+    padding-bottom: 20px;
+    width: fit-content;
+    transition: 1.5s;
+}
+
+header h1:hover{
+    text-shadow: 0 0 20px #149b38;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #01c235;
+    padding: 5px;
+    text-shadow: 0 0 5px #149b38;
+    transition: .2s;
+    line-height: 2;
+}
+
+header ul li a:hover, header ul li a:focus{
+    color: #ecf3ee;
+    background-color: #01c235;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+.hero{
+    height: 400px;
+    background-image: url(../img/home/banner-horizontal.png);
+    background-size: cover;
+    background-color: #08130b;
+    border: 4px solid #01c235;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    transition: .8s;
+}
+
+.hero:hover{
+    background-position: center;
+    background-image: url(../img/home/rick.gif);
+    box-shadow: 0px 0px 32px rgba(43, 255, 0, 0.5);
+    height: 500px;
+}
+
+main{
+    height: fit-content;
+    border: 4px solid #01c235;
+    border-radius: 10px;
+    transition: 1.5s;
+    box-sizing: border-box;
+    background-color: #08130b;
+    margin-bottom: 20px;
+}
+
+main:hover{
+    box-shadow: 0px 0px 32px rgba(43, 255, 0, 0.5);
+}
+
+.content {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    max-width: 600px;
+    padding: 4vw;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: 1s;
+}
+
+article h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #149b38;
+}
+
+article p.penulis{
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+article p{
+    font-size: 16px;
+    padding-bottom: 20px;
+    filter: drop-shadow(0px 0px 32px rgba(43, 255, 0, 0.5));
+}
+
+article a{
+    text-decoration: none;
+    color: #01c235;
+}
+
+article:hover{
+    box-shadow: 0px 0px 32px rgba(43, 255, 0, 0.5);
+    margin-top: 20px;
+}
+
+article a:hover{
+    text-decoration: underline;
+}
+
+.sidebar{
+    max-width: 300px;
+    padding-top: 60px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    transition: 1s;
+    text-align: center;
+}
+
+.sidebar h3{
+    font: bold large fira code;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 0 0 5px #149b38;
+}
+
+.sidebar img{
+    width: 100px;
+    border-radius: 50% 50% 50% 0%;
+    border: 4px solid #01c235;
+    margin-bottom: 20px;
+}
+
+.sidebar:hover{
+    margin-top: 20px;
+    filter: drop-shadow(0px 0px 32px rgba(43, 255, 0, 0.5));
+}
+
+.sidebar p{
+    font: 12px 'fira code';
+    text-align: justify;
+    filter: drop-shadow(0px 0px 32px rgba(43, 255, 0, 0.5));
+}
+
+.galery{
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.galery li{
+    width: 200px;
+    height: 200px;    
+    position: relative;
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.galery span{
+    display: block;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    background-image: repeating-linear-gradient(rgb(8, 19, 11) 40%, rgba(20, 155, 56, .1) 41%);
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    opacity: 0;
+    transition: .5s;
+    overflow: hidden;
+    color: #01c235;
+    border: 4px solid #01c235;
+}
+
+.galery span:hover{
+    opacity: 1;
+}
+
+.thumb {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 4px solid #01c235;
+}
+
+.photo{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px 0px 32px rgba(0, 0, 0, 0.5));
+    border: 4px solid #01c235;
+    border-radius: 10px;
+}
+
+.overlay{
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-image: repeating-linear-gradient(rgb(8, 19, 11) 40%, rgba(20, 155, 56, .1) 41%);
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    filter: blur(50px);
+    text-align: center;
+    align-content: center;
+    transition: .8s;
+}
+
+.overlay a{
+    z-index: 1; 
+    text-decoration: none;
+    filter: drop-shadow(0px 0px 32px rgba(0, 0, 0, 0.5));
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    position: absolute;
+    transition: .3s;
+}
+
+.overlay a:hover{
+    color: #01c235;
+}
+
+.overlay .close{
+    right: -25px;
+    top: -15px;
+    color:#01c235;
+    background-color: #08130b;
+    border: 4px solid #01c235;
+    border-radius: 50%;
+}
+
+.overlay .next{
+    font-size: 100px;
+    right: -150px;
+    top: 50%;
+    color: #ecf3ee;
+}
+
+.overlay .prev{
+    font-size: 100px;
+    left: -150px;
+    top: 50%;
+    color: #ecf3ee;
+}
+
+.overlay:target{
+    opacity: 1;
+    padding: 80px 80px;
+    filter: blur(0px);
+    visibility: visible;
+}
+
+.box{
+    background-color: black;
+    margin: auto;
+    position: relative;
+    max-width: 420px;
+    height: auto;
+}
+
+.sumber{
+    display: flex;
+    justify-content: center;
+}
+
+.container span a{
+    color: #01c235;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0px;
+    overflow: hidden;
+}
+
+footer p{
+    font: 12px fira code;
+}
+
+@media screen and (max-width: 800px) {
+    .overlay .next{
+        font-size: 70px;
+        right: -60px;
+        top: 50%;
+        color: #ecf3ee;
+    }
+    
+    .overlay .prev{
+        font-size: 70px;
+        left: -60px;
+        top: 50%;
+        color: #ecf3ee;
+    }
+}
